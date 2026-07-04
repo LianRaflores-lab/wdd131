@@ -1,0 +1,122 @@
+:root{
+    --header-background-color: rgb(167, 196, 194);
+    --font-color: rgb(34, 33, 36);
+    --subheading-background-color: rgb(34, 33, 36)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header h1 {
+    background-color: var(--header-background-color);
+    color: var(--font-color);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+nav {
+    background-color: var(--subheading-background-color); 
+    display: flex;
+}
+
+nav a {
+    flex: 1;
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+}
+
+main h1 { 
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+section {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section h2 {
+    margin: 0;
+    padding: 15px;
+    background: var(--header-background-color);
+    text-align: center;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    font-size: large;
+}
+
+.about h3 {
+    text-align: center;;
+}
+
+hr {
+    width: 80%;
+}
+
+.location img {
+    max-width: 150px;
+}
+
+.location figcaption {
+    font-style: italic;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+}
+
+.location p {
+    font-size: larger;
+}
+
+.card h3 {
+    text-align: center;
+    margin: 1rem 3rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.resources ul {
+    padding: 40px;
+}
+
+.resources li {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: var(--subheading-background-color);
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 1rem;
+}
+
+footer .lastModified {
+    color: gold;
+}
