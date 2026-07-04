@@ -2,7 +2,8 @@
     --header-background-color: rgb(167, 196, 194);
     --font-color: rgb(34, 33, 36);
     --subheading-background-color: rgb(34, 33, 36);
-    --google-sans: "Google Sans", sans-serif;
+    --open-sans: "Open Sans", sans-serif;
+    --heading-font: "Poppins", sans-serif;
 }
 
 * {
@@ -11,13 +12,24 @@
     box-sizing: border-box;
 }
 
-header h1 {
-    background-color: var(--header-background-color);
-    color: var(--font-color);
-    font-family: var(--google-sans);
+#course-title {
+    display: block;
     text-align: center;
-    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
     padding: 20px;
+    background: var(--header-background-color);
+    font-family: var(--heading-font);
+}
+
+body {
+    font-family: var(--open-sans);
+    color: var(--font-color);
+}
+
+img{
+    max-width:100%;
+    height:auto;
 }
 
 nav {
@@ -31,20 +43,28 @@ nav a {
     text-decoration: none;
     padding: 1rem;
     text-align: center;
+    transition: .3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: var(--subheading-background-color);
 }
 
 main h1 { 
     grid-column: 1 / -1;
     text-align: center;
     padding: 1rem;
-    font-family: var(--google-sans);
+    font-family: var(--heading-font);
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 section {
@@ -58,7 +78,7 @@ section h2 {
     padding: 15px;
     background: var(--header-background-color);
     text-align: center;
-    font-family: var(--google-sans);
+    font-family: var(--heading-font);
 }
 
 .about-content {
@@ -121,6 +141,6 @@ footer {
     margin-top: 1rem;
 }
 
-footer .lastModified {
+footer #lastModified {
     color: gold;
 }
