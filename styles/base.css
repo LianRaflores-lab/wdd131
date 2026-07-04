@@ -1,7 +1,8 @@
 :root{
     --header-background-color: rgb(167, 196, 194);
     --font-color: rgb(34, 33, 36);
-    --subheading-background-color: rgb(34, 33, 36)
+    --subheading-background-color: rgb(34, 33, 36);
+    --google-sans: "Google Sans", sans-serif;
 }
 
 * {
@@ -13,6 +14,7 @@
 header h1 {
     background-color: var(--header-background-color);
     color: var(--font-color);
+    font-family: var(--google-sans);
     text-align: center;
     margin: 0;
     padding: 20px;
@@ -35,6 +37,7 @@ main h1 {
     grid-column: 1 / -1;
     text-align: center;
     padding: 1rem;
+    font-family: var(--google-sans);
 }
 
 main {
@@ -55,6 +58,7 @@ section h2 {
     padding: 15px;
     background: var(--header-background-color);
     text-align: center;
+    font-family: var(--google-sans);
 }
 
 .about-content {
