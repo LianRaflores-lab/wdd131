@@ -12,7 +12,7 @@
     box-sizing: border-box;
 }
 
-#course-title {
+header #course-title {
     display: block;
     text-align: center;
     font-size: 2rem;
