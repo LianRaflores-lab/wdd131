@@ -47,8 +47,8 @@ nav a {
 }
 
 nav a:hover {
-    background-color: white;
-    color: var(--subheading-background-color);
+    color: var(--header-background-color);
+    text-decoration: underline;
 }
 
 main h1 { 
