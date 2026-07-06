@@ -22,6 +22,10 @@ header #course-title {
     font-family: var(--heading-font);
 }
 
+header {
+    display: block;
+}
+
 body {
     font-family: var(--open-sans);
     color: var(--font-color);
