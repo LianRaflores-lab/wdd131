@@ -1,7 +1,7 @@
 button.addEventListener('click', function () {
     if (input.value.trim() !== '') {
         const input = document.querySelector('#favchap')
-        const button = document.querySelector('button')
+        const button = document.querySelector('submit')
         const list = document.querySelector('_______')
 
         const li = document.createElement('li')
