@@ -32,6 +32,7 @@ main picture {
 
 main picture img {
     width: 100%;
+    height: auto
 }
 
 .data {
