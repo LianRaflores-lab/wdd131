@@ -136,7 +136,12 @@ document.getElementById("small").addEventListener("click", () => {
     );
 });
 
+const menuButton = document.querySelector("#menu");
+const nav = document.querySelector("nav");
 
+menuButton.addEventListener("click", () => {
+    nav.classList.toggle("open");
+});
 
 const currentYear = new Date().getFullYear();
 

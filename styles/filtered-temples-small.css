@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+
+   .top-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .navigation {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navigation.open {
+        display: flex;
+    }
+
+    .navigation a {
+        padding: 1rem;
+        text-align: center;
+        border-top: 1px solid #ccc;
+    }
+
+    #temple-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .temple {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .temple h3 {
+        font-size: 1.6rem;
+    }
+
+    .temple p {
+        font-size: 1rem;
+    }
+
+    .temple img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-top: 1rem;
+    }
+
+    footer {
+        padding: 1rem;
+    }
+}
