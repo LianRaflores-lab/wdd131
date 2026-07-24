@@ -1,0 +1,22 @@
+:root {
+    --heading-color: black;
+    --odd-color: grey;
+    --even-color: white;
+}
+
+table {
+    border: 1px solid black;
+}
+
+.header {
+    background: var(--heading-color);
+    color: var(--even-color);
+}
+
+tr:nth-child(odd) {
+    background: var(--odd-color);
+}
+
+tr:nth-child(even) {
+    background: var(--even-color);
+}
