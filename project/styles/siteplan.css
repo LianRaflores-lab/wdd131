@@ -27,7 +27,7 @@ header {
 
 header img {
     max-width: 200px;
-    max-height: auto;
+    height: auto;
 }
 
 main {
@@ -73,7 +73,7 @@ table {
 
 .wireframe img {
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     background: none;
     padding: 1rem;
 }
