@@ -1,0 +1,91 @@
+:root {
+    --header-background-color: #ECDCC9;
+    --font-color: rgb(34, 33, 36);
+    --subheading-background-color: #CAC2B5;
+    --open-sans: "Open Sans", sans-serif;
+    --heading-font: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: block;
+    justify-self: center;
+    background: var(--header-background-color);
+    padding: 20px;
+    font-family: var(--heading-font);
+    font-weight: bold;
+    width: 50%;
+    max-width: 50%;
+}
+
+header h1 {
+    justify-self: center;
+}
+
+main {
+    max-width: 50%;
+    margin: 1rem auto;
+}
+
+form {
+    background: var(--subheading-background-color);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 8px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: .7rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin-top: 18px;
+    display: block;
+    text-align: left;
+}
+
+legend {
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+fieldset inputp[type="radio"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: #ececec;
+    border: 1px solid #999;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ddd;
+}
