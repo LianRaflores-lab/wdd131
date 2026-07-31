@@ -3,4 +3,13 @@
         margin: 1rem;
         max-width: 95%;
     }
+
+    form {
+        padding: 15px;
+    }
+
+    .rating label {
+        display: block;
+        margin-bottom: .5rem;
+    }
 }
