@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+form > * {
+    margin-bottom: 1rem;
+}
+
 header {
     display: block;
     justify-self: center;
@@ -19,8 +23,9 @@ header {
     padding: 20px;
     font-family: var(--heading-font);
     font-weight: bold;
-    width: 50%;
-    max-width: 50%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 header h1 {
@@ -28,8 +33,9 @@ header h1 {
 }
 
 main {
-    max-width: 50%;
+    max-width: 800px;
     margin: 1rem auto;
+    font-family: var(--open-sans);
 }
 
 form {
@@ -45,11 +51,28 @@ label {
     margin-bottom: 8px;
 }
 
+.rating legend {
+    margin-bottom: 0.5rem;
+}
+
+.rating label {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
 input, select, textarea {
     width: 100%;
     padding: .7rem;
     font-size: 1rem;
     border: 1px solid #ccc;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: .5rem;
 }
 
 textarea {
@@ -70,12 +93,22 @@ legend {
     margin-bottom: 12px;
 }
 
-fieldset inputp[type="radio"] {
+fieldset input[type="radio"] {
     width: auto;
     margin-right: 8px;
 }
 
-button {
+span {
+    color: blue;
+    font-weight: normal;
+    font-size: .9rem;
+}
+
+#required {
+    color: red;
+}
+
+input[type="submit"] {
     width: 100%;
     margin-top: 25px;
     padding: 14px;
@@ -86,6 +119,20 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+input[type="submit"]:hover {
     background: #ddd;
+}
+
+footer {
+    margin: 1rem auto;
+    background: var(--subheading-background-color);
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin-top: 1rem;
+    max-width: 800px;
+}
+
+footer #lastModified {
+    color: black;
 }
