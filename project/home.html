@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipolo Pickleball Club | WDD 131 | Final Project</title>
+    <meta name="description" content="Connect with the Antipolo pickleball community. Find courts, upcoming events, tournaments, playing tips, and everything you need to get started.">
+    <meta name="author" content="Lianzel Raflores">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" width="200px" height="200px" loading="lazy">
+            <div class="logo-text">
+                <h1>Antipolo</h1>
+                <p>PICKLEBALL CLUB</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="header-navigation">
+                <li><a class="active" href="home.html" target="_blank" rel="noopener">Home</a></li>
+                <li><a href="about.html" target="_blank" rel="noopener">About</a></li>
+                <li><a href="events.html" target="_blank" rel="noopener">Events</a></li>
+                <li><a href="courts.html" target="_blank" rel="noopener">Courts</a></li>
+                <li><a href="membership.html" target="_blank" rel="noopener">Membership</a></li>
+                <li><a href="contact.html" target="_blank" rel="noopener">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="panel-1">
+            <img src="images/pickleball-court.jpg" alt="Pickleball Court" loading="lazy">>
+            <div class="hero-content">
+                <p>WELCOME TO</p>
+                <h1>ANTIPOLO PICKLEBALL CLUB</h1>
+                <p>Play. Connect. Grow</p>
+                <button id="join" aria-label="Join the club, button">JOIN THE CLUB</button>  
+            </div>
+        </section>
+        
+        <div class="info-grid">
+            <section class="card about">
+                <img src="images/players.jpg" alt="Pickleball Players" loading="lazy">>
+                <div class="card-content">
+                    <h2>ABOUT THE CLUB</h2>
+                    <p>We are a community of pickleball
+                    enthusiasts in Antipolo City. Our goal is
+                    friendships on and off the court.</p>
+                    <button id="learn-more" aria-label="Learn more, button">LEARN MORE</button>
+                </div>
+            </section>
+
+            <section class="card events">
+                <img src="images/events.jpg" alt="Pickleball Court" loading="lazy">>
+                <div class="card-content">
+                    <h2>Upcoming Events</h2>
+                    <ul>
+                        <li>Beginner Clinic - September 8, 2026</li> 
+                        <li>Friendly Doubles - September 15, 2026</li> 
+                        <li>APC Open Tournament - October 1, 2026</li> 
+                    </ul>
+                    <button id="events" aria-label="view all events, button">VIEW ALL EVENTS</button>
+                </div>
+            </section>
+
+            <section class="card courts">
+                <img src="images/courts.jpg" alt="Pickleball player playing on a court" loading="lazy">>
+                
+                <h2>LOCAL COURTS</h2>
+                <p>Find pickleball courts around Antipolo City. Check out locations, maps, and court availability</p>
+                <button id="courts" aria-label="Learn more, button">LEARN MORE</button>
+            </section>
+
+            <section class="card membership">
+                <img src="images/pickleball-members.jpg" alt="Pickleball players playing on one court" loading="lazy">>
+                <h2>MEMBERSHIP</h2>
+                <p>Join our growing community! Get access to events, clinics, and exclusive member benefits.</p>
+                <button id="membership" aria-label="Join Now, button">JOIN NOW</button>
+            </section>
+        </div>
+
+        <section class="gallery">
+            <h2>GALLERY</h2>
+            <div class="gallery-grid">
+                <img src="images/gallery1.jpg" alt="Pickleball Player serving the ball" loading="lazy">
+                <img src="images/gallery2.jpg" alt="Pickleball Player returning the ball" loading="lazy">
+                <img src="images/gallery3.jpg" alt="pickleball player receiving the ball" loading="lazy">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-1">
+            <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" loading="lazy" width="200px" height="200px">
+            <h3>ANTIPOLO PICKLEBALL CLUB</h3>
+
+            <div class="links">
+                <h3>QUICK LINKS</h3>
+                <nav>
+                    <a href="home.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="events.html">Events</a>
+                    <a href="courts.html">Courts</a>
+                    <a href="membership.html">Memebrship</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </section>
+
+        <section class="footer-2">
+            <h3>CONTACT US</h3>
+            <p>📍 Antipolo City, Philippines</p>
+            <p>✉ info@antipolopickleballclub.com</p>
+            <p>📞 0912 345 6789</p>
+
+            <div class="follow">
+                <h3>FOLLOW US</h3>
+                <a href="https://www.instagram.com/lian_raflores/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook logo" loading="lazy" width="100px" height="100px"></a>
+                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram Logo" loading="lazy" width="100px" height="100px"></a>
+            </div>
+        </section>
+
+        <p>©<span id="currentyear"></span> 🥥Lianzel Raflores🥥 Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>
