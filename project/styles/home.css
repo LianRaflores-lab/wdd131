@@ -132,6 +132,7 @@ header button {
     border: 2px solid white;
     background: var(--white);
     color: black;
+    border-radius: 999px;
 
     cursor: pointer;
     transition: 0.5s ease;
@@ -155,7 +156,8 @@ header button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    border: 1px solid black;
+    border: 1px solid var(--cream);
+    border-top: 1rem solid var(--cream);
 }
 
 .card {
@@ -166,14 +168,240 @@ header button {
 
     padding: 1.5rem;
 
-    border: 1px solid black;
+    border: 1px solid var(--cream);
+
+    font-family: var(--open-sans);
+    background: var(--header-background);
+    color: var(--white);
 }
 
 .card img {
-    width: 160px;
-    height: 120px;
+    width: auto;
+    height: 200px;
 
     object-fit: cover;
 
     flex-shrink: 0;
+    border-radius: 10%;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+
+    font-size: 1.4rem;
+    color: var(--cream);
+}
+
+.card-content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.card button {
+    padding: .5rem 1rem;
+
+    border: 1px solid black;
+    background: var(--cream);
+    font-family: var(--open-sans);
+    font-weight: bold;
+
+    cursor: pointer;
+
+    border-radius: 999px;
+    transition: .5s ease;
+}
+
+.card button:hover {
+    background: black;
+    color: white;
+}
+
+.events button {
+    margin-top: 1rem;
+}
+
+.gallery {
+    border: 1px solid #000;
+    border-top: 1rem solid var(--cream);
+    padding: 1rem 1.5rem 2rem;
+    background: var(--header-background);
+}
+
+.gallery h2 {
+    margin: 0 0 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: var(--heading-font);
+    color: var(--cream);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 4 / 3;
+
+    object-fit: cover;
+
+    border: 1px solid #999;
+    border-radius: 6%;
+
+    transition: transform .3s ease;
+}
+
+footer {
+    border: 1px solid #555;
+    padding: 2rem;
+    font-family: var(--heading-font);
+    background: #999;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+
+    gap: 3rem;
+
+    align-items: start;
+}
+
+.footer-logo {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.footer-logo img {
+    width: 150px;
+}
+
+.footer-logo h3 {
+    margin: 0;
+}
+
+.footer-logo p {
+    margin-top: .5rem;
+}
+
+.footer-grid h3 {
+    margin-top: 0;
+    margin-bottom: .75rem;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    columns: 2;
+}
+
+.footer-links li {
+    margin-bottom: .4rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-links a:hover {
+    color: #b30000;
+}
+
+.footer-follow a {
+    margin-right: .75rem;
+}
+
+.footer-follow img {
+    width: 50px;
+    transition: transform .3s;
+}
+
+.footer-follow img:hover {
+    transform: scale(1.15);
+}
+
+.copyright {
+    text-align: center;
+
+    margin-top: 2rem;
+
+    font-size: .9rem;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    max-width: 90%;
+    font-family: var(--open-sans);
+}
+
+.about-content img {
+    width: 500px;
+    border-radius: 20px;
+    object-fit: cover;
+    margin: 2rem;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+}
+.about-us h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    font-family: var(--heading-font);
+    font-size: 2.3rem;
+}
+
+.mission {
+    background: var(--cream);
+    color: black;
+    text-align: center;
+    padding: 5rem 2rem;
+    font-family: var(--heading-font);
+}
+
+.subtitle {
+    color: var(--header-background);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+.mission h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.mission-content p {
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    font-size: 1.25rem;
+    line-height: 1.8;
 }

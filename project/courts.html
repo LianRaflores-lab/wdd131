@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipolo Pickleball Club | WDD 131 | Final Project |  About Page</title>
+    <meta name="description" content="Connect with the Antipolo pickleball community. Find courts, upcoming events, tournaments, playing tips, and everything you need to get started.">
+    <meta name="author" content="Lianzel Raflores">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <script src="scripts/project.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" width="200px" height="200px" loading="lazy">
+            <div class="logo-text">
+                <h1>Antipolo</h1>
+                <p>PICKLEBALL CLUB</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="header-navigation">
+                <li><a href="home.html" target="_blank" rel="noopener">Home</a></li>
+                <li><a href="about.html" target="_blank" rel="noopener">About</a></li>
+                <li><a class="active" href="courts.html" target="_blank" rel="noopener">Courts</a></li>
+                <li><a href="membership.html" target="_blank" rel="noopener">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <h1>Courts</h1>
+            <ul class="courts">
+                <a id="old" href="#">Old</a>
+                <a id="new" href="#">New</a>
+                <a id="large" href="#">Large</a>
+                <a id="small" href="#">Small</a>
+            </ul>
+        </nav>
+
+        <section class="court-gallery">
+            <div id="court-gallery"></div>
+        </section>
+    </main>
+</body>
+</html>

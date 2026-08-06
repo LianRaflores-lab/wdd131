@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Antipolo Pickleball Club | WDD 131 | Final Project</title>
+    <title>Antipolo Pickleball Club | WDD 131 | Final Project | Home Page</title>
     <meta name="description" content="Connect with the Antipolo pickleball community. Find courts, upcoming events, tournaments, playing tips, and everything you need to get started.">
     <meta name="author" content="Lianzel Raflores">
 
@@ -33,10 +33,9 @@
             <ul class="header-navigation">
                 <li><a class="active" href="home.html" target="_blank" rel="noopener">Home</a></li>
                 <li><a href="about.html" target="_blank" rel="noopener">About</a></li>
-                <li><a href="events.html" target="_blank" rel="noopener">Events</a></li>
                 <li><a href="courts.html" target="_blank" rel="noopener">Courts</a></li>
                 <li><a href="membership.html" target="_blank" rel="noopener">Membership</a></li>
-                <li><a href="contact.html" target="_blank" rel="noopener">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -73,23 +72,25 @@
                         <li>Friendly Doubles - September 15, 2026</li> 
                         <li>APC Open Tournament - October 1, 2026</li> 
                     </ul>
-                    <button id="events" aria-label="view all events, button">VIEW ALL EVENTS</button>
                 </div>
             </section>
 
             <section class="card courts">
                 <img src="images/courts.jpg" alt="Pickleball player playing on a court" loading="lazy">>
-                
-                <h2>LOCAL COURTS</h2>
-                <p>Find pickleball courts around Antipolo City. Check out locations, maps, and court availability</p>
-                <button id="courts" aria-label="Learn more, button">LEARN MORE</button>
+                <div class="card-content">
+                    <h2>LOCAL COURTS</h2>
+                    <p>Find pickleball courts around Antipolo City. Check out locations, maps, and court availability</p>
+                    <button id="courts" aria-label="Learn more, button">LEARN MORE</button>
+                </div>
             </section>
 
             <section class="card membership">
                 <img src="images/pickleball-members.jpg" alt="Pickleball players playing on one court" loading="lazy">>
-                <h2>MEMBERSHIP</h2>
-                <p>Join our growing community! Get access to events, clinics, and exclusive member benefits.</p>
-                <button id="membership" aria-label="Join Now, button">JOIN NOW</button>
+                <div class="card-content">
+                    <h2>MEMBERSHIP</h2>
+                    <p>Join our growing community! Get access to events, clinics, and exclusive member benefits.</p>
+                    <button id="membership" aria-label="Join Now, button">JOIN NOW</button>
+                </div>
             </section>
         </div>
 
@@ -103,38 +104,51 @@
         </section>
     </main>
     <footer>
-        <section class="footer-1">
-            <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" loading="lazy" width="200px" height="200px">
-            <h3>ANTIPOLO PICKLEBALL CLUB</h3>
 
-            <div class="links">
+        <div class="footer-grid">
+
+            <section class="footer-logo">
+                <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo">
+
+                <div>
+                    <h3>ANTIPOLO PICKLEBALL CLUB</h3>
+                    <p>Play. Connect. Grow.</p>
+                </div>
+            </section>
+
+            <section class="footer-links">
                 <h3>QUICK LINKS</h3>
-                <nav>
-                    <a href="home.html">Home</a>
-                    <a href="about.html">About</a>
-                    <a href="events.html">Events</a>
-                    <a href="courts.html">Courts</a>
-                    <a href="membership.html">Memebrship</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
-            </div>
-        </section>
 
-        <section class="footer-2">
-            <h3>CONTACT US</h3>
-            <p>📍 Antipolo City, Philippines</p>
-            <p>✉ info@antipolopickleballclub.com</p>
-            <p>📞 0912 345 6789</p>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="courts.html" target="_blank">Courts</a></li>
+                    <li><a href="membership.html" target="_blank">Membership</a></li>
+                </ul>
+            </section>
 
-            <div class="follow">
+            <section class="footer-contact" id="contact">
+                <h3>CONTACT US</h3>
+
+                <p>📍 Antipolo City, Philippines</p>
+                <p>✉ info@antipolopickleballclub.com</p>
+                <p>📞 0912 345 6789</p>
+            </section>
+
+            <section class="footer-follow">
                 <h3>FOLLOW US</h3>
-                <a href="https://www.instagram.com/lian_raflores/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="Facebook logo" loading="lazy" width="100px" height="100px"></a>
-                <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"><img src="images/instagram.svg" alt="Instagram Logo" loading="lazy" width="100px" height="100px"></a>
-            </div>
-        </section>
 
-        <p>©<span id="currentyear"></span> 🥥Lianzel Raflores🥥 Philippines</p>
-        <p id="lastModified"></p>
+                <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/lian_raflores/" target="_blank"><img src="images/instagram.svg" alt="Instagram"></a>
+            </section>
+
+        </div>
+
+        <div class="copyright">
+            <p>©<span id="currentyear"></span> 🥥Lianzel Raflores🥥 Philippines</p>
+            <p id="lastModified"></p>
+        </div>
+
     </footer>
     
 </body>
