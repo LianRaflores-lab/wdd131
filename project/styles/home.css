@@ -78,6 +78,8 @@ header button {
     padding-bottom: .3rem;
 }
 
+/* ---------Home Page----------- */
+
 .panel-1 {
     position: relative;
     height: 500px;
@@ -342,6 +344,8 @@ footer {
     font-size: .9rem;
 }
 
+/* ---------About Page----------- */
+
 .about-content {
     display: flex;
     align-items: center;
@@ -404,4 +408,189 @@ footer {
     margin: 0 auto 3rem;
     font-size: 1.25rem;
     line-height: 1.8;
+}
+
+/* ---------Courts Page----------- */
+
+/* Court Gallery */
+#court-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    font-family: var(--heading-font);
+}
+
+/* Individual Court Card */
+.court {
+    background: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 12px rgba(0,0,0,.15);
+    padding: 2rem;
+    text-align: center;
+}
+
+.court h1 {
+    font-family: var(--heading-font);
+}
+
+.court a {
+    font-family: var(--open-sans);
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--header-background);
+    transition: color .3s ease;
+}
+
+.court a:hover {
+    color: var(--cream);
+}
+
+.court h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--open-sans);
+}
+
+.court p {
+    font-size: 1.4rem;
+    margin: .6rem 0;
+}
+
+.court span {
+    color: #4d3aa9;
+    font-weight: bold;
+}
+
+.court img {
+    width: 90%;
+    max-width: 600px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 2rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,.2);
+}
+
+/* ------- Memebrship Form --------*/
+
+.membership h1 {
+    font-family: var(--heading-font);
+    justify-self: center;
+    padding: 2rem;
+}
+
+.membership h2 {
+    margin-bottom: .9rem;
+    font-size: 1.4rem;
+}
+
+.info {
+    margin-bottom: 1rem;
+}
+
+.membership form{
+    max-width:900px;
+    margin:2rem auto;
+    background:white;
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+    font-family: var(--open-sans);
+    font-size: 1.3rem;
+}
+
+fieldset{
+    border:2px solid #d9d9d9;
+    border-radius:12px;
+    padding:1.5rem;
+    margin-bottom:2rem;
+}
+
+legend{
+    font-size:1.3rem;
+    font-weight:bold;
+    color:#1F7A8C;
+    padding:0 .5rem;
+}
+
+.contact{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:1rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: .8rem;
+    margin-top: .3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+input:focus,
+select:focus{
+    outline:none;
+    border-color:#1F7A8C;
+}
+
+.radio-group{
+    display:flex;
+    gap:2rem;
+    flex-wrap:wrap;
+}
+
+.days{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:.5rem;
+}
+
+input[type="submit"]{
+    display:block;
+    width:250px;
+    margin:2rem auto 0;
+    background:#2E8B57;
+    color:white;
+    border:none;
+    padding:1rem;
+    border-radius:10px;
+    font-size:1.1rem;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type="submit"]:hover{
+    background:#246b45;
+    transform:translateY(-2px);
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: .75rem;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.required {
+    color: red;
+}
+
+/* ------- Confirmation Page --------*/
+
+.confirmation h1 {
+    justify-self: center;
+    padding: 4rem;
+    font-family: var(--heading-font);
 }

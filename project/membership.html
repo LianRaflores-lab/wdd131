@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipolo Pickleball Club | WDD 131 | Final Project | Membership Page</title>
+    <meta name="description" content="Connect with the Antipolo pickleball community. Find courts, upcoming events, tournaments, playing tips, and everything you need to get started.">
+    <meta name="author" content="Lianzel Raflores">
+
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/home-small.css">
+    <script src="scripts/membership.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" width="200px" height="200px" loading="lazy">
+            <div class="logo-text">
+                <h1>Antipolo</h1>
+                <p>PICKLEBALL CLUB</p>
+            </div>
+        </div>
+
+        <button id="menu" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav>
+            <ul class="header-navigation">
+                <li><a href="home.html" target="_blank" rel="noopener">Home</a></li>
+                <li><a href="about.html" target="_blank" rel="noopener">About</a></li>
+                <li><a href="courts.html" target="_blank" rel="noopener">Courts</a></li>
+                <li><a class="active" href="membership.html" target="_blank" rel="noopener">Membership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="membership">
+        <h1>Membership Sign Up</h1>
+        <form action="confirmation.html" method="get">
+            <fieldset class="contact">
+                <legend>Player Information</legend>
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" required>
+
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" required>
+
+                <label for="phone">Contact Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="0912 345 6789" required>
+
+                <label for="email">Email <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="someone@email.com" required>
+
+                <label for="birthdate">Birthdate</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <label for="address">Home address</label>
+                <input type="text" id="address" name="address">
+            </fieldset>
+
+            <fieldset class="pickleball-experience">
+                <legend>Pickleball Information</legend>
+
+                <h2>Playing Experience <span class="required">*</span></h2>
+                <div class="radio-group info">
+                    <div class="radio-option">
+                        <input type="radio" id="beginner" name="rating" value="beginner" required>
+                        <label for="beginner">Beginner</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="novice" name="rating" value="novice" required>
+                        <label for="novice">Novice</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="intermediate" name="rating" value="intermediate" required>
+                        <label for="intermediate">Intermediate</label>
+                    </div>
+
+                    <div class="radio-option">
+                        <input type="radio" id="advanced" name="rating" value="advanced" required>
+                        <label for="advanced">Advanced</label>
+                    </div>
+                </div>
+
+                <h2>How often do you play?</h2>
+                <select name="often" id="often" class="info">
+                    <option value="" selected disabled>--Select regularity--</option>
+                </select>
+
+                <h2>Preffered Playing Days</h2>
+                <div class="days info">
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="monday" name="monday">
+                        <label for="monday">Monday</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="tuesday" name="tuesday">
+                        <label for="tuesday">Tuesday</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="wednesday" name="wednesday">
+                        <label for="wednesday">Wednesdayy</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="thursday" name="thursday">
+                        <label for="thursday">Thursday</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="friday" name="friday">
+                        <label for="friday">Friday</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="saturday" name="saturday">
+                        <label for="saturday">Saturday</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="emergency">
+                <legend>Emergency contact</legend>
+
+                <label for="contact-name">Emergency Contact Name</label>
+                <input type="text" id="contact-name" name="contact-name">
+
+                <label for="contact-phone">Emergency Contact Number</label>
+                <input type="tel" id="contact-phone" name="contact-phone" placeholder="0912 345 6789">
+
+                <label for="relationship">Relationship</label>
+                <select name="relationship" id="relationship">
+                    <option value="" selected disabled>--Relationship--</option>
+                </select>
+            </fieldset>
+
+            <label for="submit"><input type="submit" value="Join the Club"></label>
+        </form>
+    </main>
+
+    <footer>
+
+        <div class="footer-grid">
+
+            <section class="footer-logo">
+                <img src="images/website-logo.png" alt="Antipolo Pickleball Club Logo" loading="lazy">
+
+                <div>
+                    <h3>ANTIPOLO PICKLEBALL CLUB</h3>
+                    <p>Play. Connect. Grow.</p>
+                </div>
+            </section>
+
+            <section class="footer-links">
+                <h3>QUICK LINKS</h3>
+
+                <ul>
+                    <li><a href="home.html" target="_blank">Home</a></li>
+                    <li><a href="about.html" target="_blank">About</a></li>
+                    <li><a href="courts.html" target="_blank">Courts</a></li>
+                    <li><a href="membership.html" target="_blank">Membership</a></li>
+                    <li><a href="reference.html" target="_blank">References</a></li>
+                </ul>
+            </section>
+
+            <section class="footer-contact" id="contact">
+                <h3>CONTACT US</h3>
+
+                <p>📍 Antipolo City, Philippines</p>
+                <p>✉ info@antipolopickleballclub.com</p>
+                <p>📞 0912 345 6789</p>
+            </section>
+
+            <section class="footer-follow">
+                <h3>FOLLOW US</h3>
+
+                <a href="https://www.facebook.com/lian.raflores" target="_blank"><img src="images/facebook.svg" alt="Facebook" loading="lazy"></a>
+                <a href="https://www.instagram.com/lian_raflores/" target="_blank"><img src="images/instagram.svg" alt="Instagram" loading="lazy"></a>
+            </section>
+
+        </div>
+
+        <div class="copyright">
+            <p>©<span id="currentyear"></span> 🥥Lianzel Raflores🥥 Philippines</p>
+            <p id="lastModified"></p>
+        </div>
+
+    </footer>
+</body>
+</html>
