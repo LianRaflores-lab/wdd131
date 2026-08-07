@@ -594,3 +594,33 @@ input[type="submit"]:hover{
     padding: 4rem;
     font-family: var(--heading-font);
 }
+
+.confirmation {
+    justify-self: center;
+    padding: 4rem;
+    font-family: var(--open-sans);
+}
+
+.confirmation a {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: var(--cream);
+    color: var(--header-background);
+    font-weight: bold;
+    border-radius: 50px;
+    transition: color .5s ease;
+}
+
+.confirmation a:hover {
+    color: var(--cream);
+    background: var(--header-background);
+}
+
+#confirmation-details {
+    margin-bottom: 4rem;
+}
+
+.confirmation-card h3 {
+    margin: 1rem;
+    margin-top: 3rem;
+}

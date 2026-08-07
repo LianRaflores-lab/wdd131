@@ -66,9 +66,48 @@ relationship.forEach(rel => {
     relationshipSelect.appendChild(option);
 })
 
-const currentYear = new Date().getFullYear();
+const form = document.querySelector("#membership-form");
 
-document.getElementById("currentyear").textContent = currentYear;
+if (form) {
+    form.addEventListener("submit", function(event) {
+        event.preventDefault();
 
-document.getElementById("lastModified").textContent =
-    `Last Modified: ${document.lastModified}`;
+        const formData = new FormData(form);
+        const submission = {};
+
+        formData.forEach((value, key) => {
+            submission[key] = value;
+        });
+
+        localStorage.setItem(
+            "membershipData",
+            JSON.stringify(submission)
+        );
+
+        window.location.href = "confirmation.html";
+    });
+}
+
+const confirmationDetails =
+    document.querySelector("#confirmation-details");
+
+const savedData = localStorage.getItem("membershipData");
+
+if (savedData) {
+
+    const data = JSON.parse(savedData);
+
+    confirmationDetails.innerHTML = `
+        <h2>Thank you for joining! ${data.firstName}!</h2>
+
+        <h3>Your Membership Information</h3>
+
+        <p><strong>First Name:</strong> ${data.firstName}</p>
+
+        <p><strong>Email:</strong> ${data.email}</p>
+
+        <p><strong>Phone:</strong> ${data.phone}</p>
+
+        <p>Your membership request has been received.</p>
+    `;
+}

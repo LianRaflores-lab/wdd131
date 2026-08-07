@@ -95,10 +95,3 @@ document.getElementById("small").addEventListener("click", () => {
         courts.filter(court => court.area < 999)
     );
 });
-
-const currentYear = new Date().getFullYear();
-
-document.getElementById("currentyear").textContent = currentYear;
-
-document.getElementById("lastModified").textContent =
-    `Last Modified: ${document.lastModified}`;

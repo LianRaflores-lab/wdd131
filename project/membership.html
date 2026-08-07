@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/home.css">
     <link rel="stylesheet" href="styles/home-small.css">
     <script src="scripts/membership.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +26,7 @@
             </div>
         </div>
 
-        <button id="menu" aria-label="Open navigation">
+        <button id="menu-button" aria-label="Open navigation">
             ☰
         </button>
 
@@ -42,7 +43,7 @@
 
     <main class="membership">
         <h1>Membership Sign Up</h1>
-        <form action="confirmation.html" method="get">
+        <form action="confirmation.html" method="get" id="membership-form">
             <fieldset class="contact">
                 <legend>Player Information</legend>
                 <label for="firstName">First Name <span class="required">*</span></label>
@@ -98,27 +99,27 @@
                 <h2>Preffered Playing Days</h2>
                 <div class="days info">
                     <div class="checkbox-item">
-                        <input type="checkbox" id="monday" name="monday">
+                        <input type="checkbox" id="monday" name="monday" value="Monday">
                         <label for="monday">Monday</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="tuesday" name="tuesday">
+                        <input type="checkbox" id="tuesday" name="tuesday" value="Tuesday">
                         <label for="tuesday">Tuesday</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="wednesday" name="wednesday">
+                        <input type="checkbox" id="wednesday" name="wednesday" value="Wednesday">
                         <label for="wednesday">Wednesdayy</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="thursday" name="thursday">
+                        <input type="checkbox" id="thursday" name="thursday" value="Thursday">
                         <label for="thursday">Thursday</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="friday" name="friday">
+                        <input type="checkbox" id="friday" name="friday" value="Friday">
                         <label for="friday">Friday</label>
                     </div>
                     <div class="checkbox-item">
-                        <input type="checkbox" id="saturday" name="saturday">
+                        <input type="checkbox" id="saturday" name="saturday" value="Saturday">
                         <label for="saturday">Saturday</label>
                     </div>
                 </div>
